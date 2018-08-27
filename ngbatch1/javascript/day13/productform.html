@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>product details</title>
+</head>
+<body>
+	<script type="text/javascript">
+	function orders()
+	{
+		
+		 document.getElementById("getval1").innerHTML=document.myform.name1.value;
+		 document.getElementById("getval2").innerHTML=document.myform.name2.value;
+		   document.getElementById("getval3").innerHTML=document.myform.name3.value;
+		}
+</script>
+<center>
+<form name="myform">
+	 <label>enter type of chair:</label>
+		<input type="text"   name="name1" value="neelkamal"><br>
+	 <label>enter type of table:</label>
+		<input type="text"   name="name2" value="wood"><br>
+	<label>enter color of light:</label>	
+		<input type="text"   name="name3" value="white"><br><br>
+			<input type="submit" onclick="orders(); return false">
+</form><br><br>
+<table border="1">
+	<tr>
+		<th>chairs</th>
+		<th>tables</th>
+		<th>lights</th>
+	</tr>
+		<tr>
+			<td id="getval1"></td>
+			<td id="getval2"></td>
+			<td id="getval3"></td>
+
+		</tr>
+	</table>
+</center>
+</body>
+</html>

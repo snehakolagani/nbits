@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var mainMenu=["biryani","butternaan","roti","chiken lollipo"];
+	var curryMenu=["kaaju curry","vegmixed","panner","mashrum curry"];
+	function hotel(main,sub){
+
+		for( var i=0;i<mainMenu.length;i++)
+			{
+				for(var j=0;j<curryMenu.length;j++)
+				{
+
+				if (mainMenu[i]==main &&  curryMenu[j]==sub) {
+					console.log("item is available");
+				
+																}
+				else{
+					// debugger;
+					if(i === mainMenu.length-1 && j === curryMenu.length-1){
+						console.log("not available");	
+					}
+					
+				}												
+
+
+				
+				}
+
+
+			}
+
+			}
+								
+	hotel("roti","panneer");
+</script>
+</body>
+</html>

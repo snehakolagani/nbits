@@ -1,0 +1,73 @@
+html,body,h1,h2,h3,h4,h5,h6,p,ul,li,ol{
+			padding:0px;
+			margin:0px;
+		}	
+		div.header{
+			background-color: black;
+		}
+		ul li{
+			padding:15px;
+			list-style-type: none;
+			float:left;
+		}
+		div.header ul li:last-of-type{
+			float:right;
+		}
+		ul li a {
+			color:#CCCCCC;
+			text-decoration: none;
+		}
+		ul li:hover {
+			background-color: #CCCCCC;
+		}
+		ul li:hover a{
+			color:#000000;
+		}
+		div.banner{
+			background-image:url('images/temp.jpg');
+			height:532px;
+			position: relative;
+		}
+		div.banner div{
+			position:absolute;
+			bottom:50px;
+			left:40%;
+			color:white;
+		}
+		div.banner div h3{
+			text-align:center;
+			margin-bottom: 30px;
+		}
+		br.clearfix {
+			clear:both;
+		}
+							div.main{
+			width:900px;
+			text-align:center;
+			padding: 10px;
+			margin:auto;
+		}
+		div.box{
+			width:300px;
+			
+		}
+		/*p{
+			border:2px solid black;
+			width:250px;
+			padding:10px;
+			box-sizing: border-box;
+			margin-left:20px;
+		}*/
+		div.box1,.box2,.box3{
+	
+			float:left;
+			
+		}
+		div.forms{
+			
+			text-align: center;
+		}
+		div.places{
+			background-color: black;
+			color: white;
+		}

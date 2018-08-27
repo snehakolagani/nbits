@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>template</title>
+<link rel="stylesheet" type="text/css" href="template.css">
+</head>
+<body>
+	<!-- https://www.w3schools.com/w3css/tryw3css_templates_band.htm#band -->
+	<div class="header">
+		<ul>
+			<li><a href="#home">Home </a></li>
+			<li><a href="#band">band</a></li>
+			<li><a href="#Tour">Tour</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#">More</a></li>
+			<li><a href="#">SearchIcon</a></li>
+			<br class="clearfix">
+		</ul>
+	</div>
+	<div class="banner">
+		<div>
+			<h3>music time</h3>
+			<p>dance and music is the best relaxation</p>
+		</div>
+	</div><br>
+	<div class="main">
+		<h1>THE BAND</h1><br>
+			<em>we love music </em><br><br>
+			<p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br><br><br><br>
+			
+			
+		<div class="box box1">
+			<p>Name</p><br>
+				<img src="images/photo.jpg"></img>
+		</div>
+		<div class="box box2">
+			<p>Name</p><br>
+			<img src="images/photo.jpg"></img>
+		</div>
+		<div class="box box3">
+			<p>Name</p><br>
+			<img src="images/photo.jpg"></img>
+		</div>
+	</div><br>
+	<div style="background-color: black;">
+		<h1>YOUR DATES</h1><br><br>
+		<em>remeber to book your tikets</em>  <br/>  <br/>
+		<center>
+	<table>
+		<tr><td><input type="text" name="sept"  size="80" value="september"></td></tr>
+		<tr><td><input type="text" name="oct" size="80"  value="octoberber"></td></tr>
+		<tr><td><input type="text" name="nov" size="80"  value="november"></td></tr>
+	</table>
+	</div>
+</center><br><br><br>
+<div class="main">
+
+	
+<div class="box box1">
+			
+				<img src="images/paris.jpg"></img>
+				<br>
+				<b>paris</b><br>
+
+<em>Fri 27 Nov 2016</em><br>
+
+<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p><br>
+<input class="places" type="submit"  value="book tikets" >
+</div>
+		
+		<div class="box box2">
+			
+			<img src="images/newyork.jpg"></img>
+			<br>
+				<b>New York</b><br>
+
+<em>sunday 29 Nov 2016</em><br>
+
+<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p><br>
+<input type="submit"  value="book tikets" >
+
+		</div>
+		<div class="box box3">
+		
+			<img src="images/sanfran.jpg"></img>
+			<br>
+				<b>sanfran</b><br>
+
+<em>sat 29 Nov 2016</em><br>
+
+<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p><br>
+<input type="submit"  value="book tikets" >
+</div></div><br><br>
+		<div class="main">
+		<h2>contact</h2>
+		<p>place:chicago</p>
+		<p>ph no:040-521489</p>
+		<p>email:chicagotours@gmail.com</p>
+		  <br/>  <br/>
+		<form>
+    <input type="text" name="name"  placeholder="name" align="right" /> 
+    <input type="text" name="name"  placeholder="email" align="right" />
+    <br/>
+     <br/>
+       <input type="text" name="name"  placeholder="message"  size="40" align="right" />
+       <input type="submit" value="send" />   <br>   <br>
+</form>
+
+	
+<div id="map" style="width:900px;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+</div>
+
+</body>
+</html>

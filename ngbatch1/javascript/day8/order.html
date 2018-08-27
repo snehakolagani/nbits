@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+	var dataOfCustomer=[{"name":"sneha",
+							 "orders": [
+            {
+                "item":"pizza",
+                "cost": 200
+            },
+            {
+               "item":"burger",
+               "cost":150
+            }
+      								  ]
+   						 },
+   						{"name":"ammaji",
+							 "orders": [
+            {
+                "item":"burger",
+                "cost": 150
+            },
+            {
+               "item":"frenchfries",
+               "cost":80
+            },
+            {
+               "item":"coke",
+               "cost":60
+            }
+      			
+      								  ]
+   						 },
+						{"name":"pooja",
+							 "orders": [
+            {
+                "item":"corn",
+                "cost": 60
+            },
+           
+            {
+               "item":"cold cofee",
+               "cost":60
+            }
+      			
+      								  ]
+   						 },
+   						 		{"name":"siri",
+							 "orders": [
+            {
+                "item":"samosa",
+                "cost": 50
+            },
+            {
+               "item":"mangojuice",
+               "cost":30
+            }
+            							]
+            					}		
+
+   						 ];
+		
+
+for(var i in dataOfCustomer)
+{
+  var orders_Str="<div>";
+  orders_Str=orders_Str+"<p>NAME:"+dataOfCustomer[i].name+"</p>";
+  var table_str="<table><thead><tr><th>Item</th><th>Cost</th></tr></thead>";
+  var total_cost=0;
+  for(var j in dataOfCustomer[i].orders)
+  {
+    var item_str="<tr>"
+    item_str=item_str+"<td>"+dataOfCustomer[i].orders[j].item+"</td>";
+    var item_cost=0;
+    item_cost=dataOfCustomer[i].orders[j].cost
+   
+   item_str=item_str+"<td>"+item_cost+"</td>";
+    item_str=item_str+"</tr>";
+    total_cost=total_cost+item_cost;
+    table_str=table_str+item_str;
+
+  }
+  table_str=table_str+"<tr><td>Total Cost</td><td>"+total_cost+"</td></tr>";
+
+  table_str=table_str+"</table>";
+  orders_Str=orders_Str+table_str+"</div>";
+  document.write("<br>"+orders_Str);
+	
+		}
+	
+</script>
+
+</body>
+</html>
