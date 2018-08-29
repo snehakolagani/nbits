@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	table{
+		border:2px solid black;
+	}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+	function customer(name,product){
+
+		this.name=name;
+		this.product=product;
+			document.write(name+"   "+product+"<br>");
+		
+	}
+	//objects creation using literal
+	var obj={
+		name:"sneha",
+		age:22
+
+	}
+	//creating objects using new keyword
+	var obj1=new customer("sneha","rice");
+	var obj2=new customer("raji","fruits");
+	var obj3=new customer("chanti","creams");
+	var obj4=new customer("ammu","softdrinks");
+	var obj5=new customer("ram","choclates");
+								
+	customer("sneha","wheat");// creating objects using constructor
+						
+
+	
+		
+</script>
+</body>
+</html>
