@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+		<h3>Customer name </h3>
+		<table>
+			<tr><th>product name</th><th>item cost</th></tr>
+			<tr><td></td><td></td></tr>
+			<tr><td></td><td></td></tr>
+		</table>
+	</div>
+	<script src="data.js"></script>
+	<script type="text/javascript">
+	 var arrOfNames=data.map(function(obj){
+	 	return obj.firstName+obj.lastName});
+	  console.log(arrOfNames);
+
+	 var arrOfItems=data.map(function(obj){
+	 	return obj.orders.map(function(obj)	{
+	 		return obj.itemCost	;
+	 					} );
+										 });
+	console.log(arrOfItems);
+	 var totalcost=data[0].orders[0].itemCost+data[0].orders[1].itemCost;
+
+	 console.log(totalcost);
+	 </script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		table{
+			border-style: solid;
+		}
+	</style>
+</head>
+<body>
+	<table id="arrays"></table>
+<script type="text/javascript">
+	var arr=[{"name":"sneha","age":23},{"name":"raji","age":19},{"name":"chanti","age":16}];
+	 var arrofnames=arr.map(function(obj){
+		return  obj.name+" "+obj.age;
+		
+
+	});
+document.getElementById("arrays").innerHTML=arrofnames;
+</script>
+</body>
+</html>

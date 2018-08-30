@@ -13,11 +13,18 @@
 	console.log(arr);
 	arr.unshift(0);
 	console.log(arr);
-	var arr1=[5,6,7,8,9,10];
-	 var ar2=arr1.slice(1,4);
+	var arr1=[11,8,6,7,2,9,10];
+		 var arr2=arr1.sort(function(initialval,finalval){
+			return initialval-finalval;
+		});
+		 console.log(arr2);
+
+	/* var ar2=arr1.slice(1,4);
 	console.log(ar2);
 	arr1.splice(1,2,11);
 	console.log(arr1);
+*/
+
 </script>
 </body>
 </html>
