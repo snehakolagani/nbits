@@ -15,28 +15,23 @@
 		</table>
 	</div>
 	<script src="data.js"></script>
-	<script type="text/javascript">
-	 var arrOfNames=data.map(function(obj){
-	 	return obj.firstName+obj.lastName});
-	  console.log(arrOfNames);
+	<script>
+		/*console.log(data);*/
+var arrOfCost=data.map(function(obj){
+return obj.orders.map(function(obj){
+return obj.itemCost;
 
-	 var arrOfItems=data.map(function(obj){
-	 	return obj.orders.map(function(obj)	{
-	 		return obj.itemCost	;
-	 					} );
-										 });
-	console.log(arrOfItems);
+}).reduce(function(previousValue, currentValue) {
+ //console.log( previousValue + currentValue);
+previousValue=previousValue+currentValue;
+ return previousValue;
 
-var costs=arrOfItems.reduce(function(firstval,finalval){
-					cost= firstval+finalval;
-					return cost;
-
-					});
-console.log(costs);
-	 //var totalcost=data[0].orders[0].itemCost+data[0].orders[1].itemCost;
+});
+});
+ console.log(arrOfCost);
+</script>
 
 
-	 </script>
 
 </body>
 </html>
