@@ -13,11 +13,11 @@ var data = [
         "orders": [
             {
                 "productName": "Basketball",
-                "itemCost": 7.99
+                "itemCost": 2.99
             },
             {
                 "productName": "Shoes",
-                "itemCost": 199.99
+                "itemCost": 5.99
             }
         ],
         "latitude": 17.3457176,

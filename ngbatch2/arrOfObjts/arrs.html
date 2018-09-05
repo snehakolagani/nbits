@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	array=[
+			{name:"sneha",
+				age:20,
+				orders:[{item:"wrappers",cost:15},{item:"biscuit",cost:20}]},
+
+			{name:"raji",
+				age:18,
+				orders:[{item:"choclate",cost:100},{item:"fuse",cost:60}]}
+			];
+			var arrOfCost=array.map(function(obj){
+				 return obj.orders.map(function(obj){
+				 	return obj.cost;
+				 	
+				 });
+			});
+			console.log(arrOfCost);
+			var total=arrOfCost.reduce(function(intval,finalval){
+						for(var i=0;i<arrOfCost.length;i++){
+				 		 intval=intval+finalval;
+				 
+				 		return intval;
+				 		}
+				 	});
+			console.log(total);
+			
+</script>
+</body>
+</html>

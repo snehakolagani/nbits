@@ -26,9 +26,16 @@
 	 					} );
 										 });
 	console.log(arrOfItems);
-	 var totalcost=data[0].orders[0].itemCost+data[0].orders[1].itemCost;
 
-	 console.log(totalcost);
+var costs=arrOfItems.reduce(function(firstval,finalval){
+					cost= firstval+finalval;
+					return cost;
+
+					});
+console.log(costs);
+	 //var totalcost=data[0].orders[0].itemCost+data[0].orders[1].itemCost;
+
+
 	 </script>
 
 </body>
