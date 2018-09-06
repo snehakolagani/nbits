@@ -1,5 +1,11 @@
 table,tr,td{
 	border:1px solid black;
 	text-align: center;
-	width: 300px;
+	width: 500px;
+	margin-left: 200px;
+}
+.h1style{
+	color: red;
+	background-color: lightgrey;
+	font-style: italic;
 }

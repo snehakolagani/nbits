@@ -3,21 +3,54 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div>
-		<h3>Customer name </h3>
-		<table>
-			<tr><th>product name</th><th>item cost</th></tr>
-			<tr><td></td><td></td></tr>
-			<tr><td></td><td></td></tr>
-		</table>
-	</div>
+	<table id="add"> 
+	<tr class="h1style"><td>CUSTOMER NAME</td>
+		<td>ORDERS</td>
+		<td>ITEMS COST</td>
+		<td>TOTAL COST</td>
+	</tr>
+	</table>
+	<!-- <button onclick="addRow();">clik</button> -->
+	
 	<script src="data.js"></script>
 	<script>
-		/*console.log(data);*/
-var arrOfCost=data.map(function(obj){
+    function addRow()
+    {
+        var str ="";
+        for(var i=0;i<data.length;i++)
+        {
+            str+="<tr>";
+            str+="<td>"+ firstnames[i]+" "+lastnames[i]+"</td>";
+                 str+="<td>"+ items[i]+"</td>";
+                 str+="<td>"+ cost[i]+"</td>";
+                   str+="<td>"+ totalCost[i]+"</td>";
+            str+="</tr>";
+        }
+        /*$('#add').html(str); */ $('#add').append(str);
+    }
+var firstnames=data.map(function(obj){
+	 return obj.firstName;
+	 });
+	 var lastnames=data.map(function(obj){
+	 return obj.lastName;
+	 });
+	 var items=data.map(function(obj){
+	 	return obj.orders.map(function(obj){
+	 			return obj.productName;
+	 	})
+	 });
+	  var cost=data.map(function(obj){
+	 	return obj.orders.map(function(obj){
+	 			return obj.itemCost;
+	 	})
+	 });
+
+
+var totalCost=data.map(function(obj){
 return obj.orders.map(function(obj){
 return obj.itemCost;
 
@@ -28,7 +61,8 @@ previousValue=previousValue+currentValue;
 
 });
 });
- console.log(arrOfCost);
+addRow();
+ //console.log(arrOfCost);
 </script>
 
 
