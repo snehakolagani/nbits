@@ -69,7 +69,7 @@ var data = [
             },
             {
                 "productName": "Hat",
-                "itemCost": 5.99
+                "itemCost":120
             }
         ],
         "latitude": 17.3687826,
@@ -89,7 +89,7 @@ var data = [
         "orders": [
             {
                 "productName": "Frisbee",
-                "itemCost": 2.99
+                "itemCost": 100
             },
             {
                 "productName": "Hat",
@@ -141,7 +141,7 @@ var data = [
             },
             {
                 "productName": "Hat",
-                "itemCost": 5.99
+                "itemCost":40
             }
         ],
         "latitude": 10.7867303,
@@ -161,7 +161,7 @@ var data = [
         "orders": [
             {
                 "productName": "Frisbee",
-                "itemCost": 2.99
+                "itemCost": 60
             },
             {
                 "productName": "Hat",
@@ -257,7 +257,7 @@ var data = [
         "orders": [
             {
                 "productName": "Frisbee",
-                "itemCost": 2.99
+                "itemCost": 230
             },
             {
                 "productName": "Hat",
@@ -285,7 +285,7 @@ var data = [
             },
             {
                 "productName": "Hat",
-                "itemCost": 5.99
+                "itemCost": 80
             }
         ],
         "latitude": 13.0891361,
@@ -381,7 +381,7 @@ var data = [
             },
             {
                 "productName": "Hat",
-                "itemCost": 5.99
+                "itemCost": 22
             }
         ],
         "latitude": 25.6980509,
@@ -429,7 +429,7 @@ var data = [
             },
             {
                 "productName": "Hat",
-                "itemCost": 5.99
+                "itemCost": 20.66
             }
         ],
         "latitude": 13.6287557,
@@ -473,7 +473,7 @@ var data = [
         "orders": [
             {
                 "productName": "Frisbee",
-                "itemCost": 2.99
+                "itemCost": 130
             },
             {
                 "productName": "Hat",
@@ -525,7 +525,7 @@ var data = [
             },
             {
                 "productName": "Hat",
-                "itemCost": 5.99
+                "itemCost": 49
             }
         ],
         "latitude": 17.4399295,

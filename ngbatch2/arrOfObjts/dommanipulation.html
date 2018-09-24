@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		table,tr,td{
+			border:1px solid black;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<button style="margin-left: 200px">SHOW/HIDE CustomerDetails</button>
+	<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript">
+
+	function customerDetails(){
+		for(var i=0;i<=data.length;i++){
+			for(var j=0;j<=3;j++){
+
+			var divEl=document.createElement("div");
+			var tabEl=document.createElement("table");
+			var trEl=document.createElement("tr");
+			var tdEl1=document.createElement("td");
+			var tdEl2=document.createElement("td");
+			//tdEl1.setAttribute("id","pn");
+			
+			trEl.appendChild(tdEl1);
+			trEl.appendChild(tdEl2);
+			tabEl.appendChild(trEl);
+			divEl.appendChild(tabEl);
+  			/*tdEl1.innerText="product name";
+			tdEl2.innerText="item cost";*/
+			divEl.style.margin="20px 200px";
+
+			document.body.appendChild(divEl);
+		}
+			}
+		}
+			/*var trEl2=document.createElement("tr");
+			var tdEl21=document.createElement("td");
+			var tdEl22=document.createElement("td");
+			trEl2.appendChild(tdEl21);
+			trEl2.appendChild(tdEl22);
+			tabEl.appendChild(trEl2);
+			
+			tdEl21.innerText="product name";
+			tdEl22.innerText="item cost";
+			
+			var trEl3=document.createElement("tr");
+			var tdEl31=document.createElement("td");
+			var tdEl32=document.createElement("td");
+			trEl3.appendChild(tdEl31);
+			trEl3.appendChild(tdEl32);
+			tabEl.appendChild(trEl3);
+			
+			tdEl31.innerText="total cost";
+			tdEl32.innerText=" ";
+		
+			document.body.appendChild(divEl);
+		}
+		
+	}*/
+			var items=data.map(function(obj){
+	 	return obj.orders.map(function(obj){
+	 			return obj.productName;
+	 	});
+	 });
+			//document.getElementById("pn").innerHTML="items";
+
+	$(document).ready(function(){
+    $("button").click(function(){
+        $("div").toggle();
+    });
+});
+	customerDetails();
+</script>
+
+</body>
+</html>

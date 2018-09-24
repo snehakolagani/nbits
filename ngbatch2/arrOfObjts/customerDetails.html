@@ -5,6 +5,9 @@
 	<title></title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	 <link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+
+</style>
 </head>
 <body>
 	<table id="add"> 
@@ -18,6 +21,7 @@
 	
 	<script src="data.js"></script>
 	<script>
+		
     function addRow()
     {
         var str ="";
@@ -28,10 +32,16 @@
                  str+="<td>"+ items[i]+"</td>";
                  str+="<td>"+ cost[i]+"</td>";
                    str+="<td>"+ totalCost[i]+"</td>";
-            str+="</tr>";
+            str+="</tr>"+"<br/>";
+
+         
+            	
+            
         }
-        /*$('#add').html(str); */ $('#add').append(str);
+        /*$('#add').html(str);  */$('#add').append(str);
+       // document.getElementsByTagName("td").style.color="green";
     }
+   
 var firstnames=data.map(function(obj){
 	 return obj.firstName;
 	 });
@@ -61,8 +71,9 @@ previousValue=previousValue+currentValue;
 
 });
 });
-addRow();
+//
  //console.log(arrOfCost);
+  addRow();
 </script>
 
 
