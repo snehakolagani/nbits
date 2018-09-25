@@ -1,7 +1,10 @@
 import {CustomerComponent} from "./customer/customer.component";
 import {Routes} from "@angular/router";
+import {CustomersComponent} from "./customer/customers.component";
 
 export const routes:Routes = [
     
-    {path:'customer', loadChildren:'./customer/customer.module#CustomerModule'},
+    {path:'customer', component:CustomerComponent},
+    {path:'customers', component: CustomersComponent}
 ]
+
