@@ -7,6 +7,7 @@ import {CustomersComponent} from './customer/customers.component';
 import {FormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import { routes } from './app.route';
+import { CustomerModule } from './customer/customer.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { routes } from './app.route';
     CustomersComponent
   ],
   imports: [
-    BrowserModule,FormsModule, RouterModule.forRoot(routes)
+    BrowserModule,FormsModule, RouterModule.forRoot(routes),CustomerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
