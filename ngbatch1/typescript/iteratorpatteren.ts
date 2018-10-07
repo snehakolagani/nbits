@@ -1,33 +1,34 @@
-let arr = [1,2,3,4,5,6,7,8,9]
- class SelectingNumbers {
-    cursor;
-    divisor;
+class MultiperIterator {
     arr;
-    constructor(arr,divisor = 1){
-        this.cursor = 0;
+    divisor;
+    count;
+    constructor(arr, divisor = 1){
         this.arr = arr;
+        this.count = 0;
         this.divisor = divisor;
     }
     next(){
-        while(this.cursor < this.arr.length){
-           // console.log(this.arr[this.cursor] % this.divisor === 0);
-            if(this.arr[this.cursor] % this.divisor === 0){
-                // console.log(`needed value from array  ${this.arr[this.cursor]}`)
-                let item = this.arr[this.cursor]
-                this.cursor++;
-                return item;
+        while(this.count < this.arr.length){
+            if(this.arr[this.count++] % this.divisor === 0){
+                return this.arr[this.count-1];
             }
-            
         }
     }
     hasNext(){
-        while(this.cursor < this.arr.length){
-            if(this.arr[this.cursor++] % this.divisor === 0){
+        let countVal = this.count;
+        while(countVal < this.arr.length ){
+            countVal = countVal + 1;
+            if(this.arr[countVal] % this.divisor === 0){
                 return true;
             }
-            return false;
         }
+        return false;
     }
 }
- let findingEvenNumbers = new SelectingNumbers(arr,2)
-console.log(findingEvenNumbers.next(), findingEvenNumbers.hasNext()); 
+
+var arrayVal = [1,2,3,4,5,6,7,8,9,10];
+let iterator_1 = new MultiperIterator(arrayVal,3);
+
+console.log(iterator_1.next(), 'has next value ', iterator_1.hasNext());
+console.log(iterator_1.next(), 'has next value ', iterator_1.hasNext());
+console.log(iterator_1.next(), 'has next value ', iterator_1.hasNext());

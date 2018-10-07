@@ -1,8 +1,12 @@
-import {CustomerComponent} from './customer.component';
-import {Routes} from "@angular/router";
-import {CustomersComponent} from "./customers.component";
-export const custroutes:Routes = [
-    
-    {path:'signin', component:CustomerComponent},
-    {path:'signup', component: CustomersComponent}
+import { CustomerComponent } from "./customer.component";
+import { CustomersComponent } from "./customers.component";
+import { AppComponent } from "../app.component";
+
+
+
+export const custroutes = [
+    {path:'',component:CustomerComponent},
+    {path:'signin',component:CustomerComponent},
+    {path:'signup',component:CustomersComponent},
+    {path:"customer",component:CustomerComponent}
 ]
